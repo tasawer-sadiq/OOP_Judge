@@ -33,6 +33,6 @@ A simple object-oriented online judge system built in C++. This project includes
    ```bash
    g++ -std=c++17 -I OOP-Online-Judge/include OOP-Online-Judge/src/*.cpp -o OOP_Judge
    
-   3. Run the executable:
+3. Run the executable:
    ```bash
    ./OOP_Judge
