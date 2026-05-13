@@ -1,0 +1,393 @@
+EASY LEVEL
+1.
+cout << "Hello World"
+
+What is missing?
+
+Answer: ;
+
+2.
+class Student
+{
+};
+
+What symbol ends the class?
+
+Answer: ;
+
+3.
+Student s1;
+
+What is s1?
+
+Answer: Object
+
+4.
+class Car
+{
+public:
+    int speed;
+};
+
+Which keyword makes members accessible outside class?
+
+Answer: public
+
+5.
+class Test
+{
+private:
+    int x;
+};
+
+Can x be accessed directly outside class?
+
+Answer: No
+
+6.
+class A
+{
+public:
+    A()
+    {
+        cout << "Constructor";
+    }
+};
+
+When is constructor called?
+
+Answer: When object is created
+
+7.
+A a1;
+A a2;
+
+How many times constructor runs?
+
+Answer: 2 times
+
+8.
+class A
+{
+public:
+    ~A()
+    {
+        cout << "Destroyed";
+    }
+};
+
+What type of function is ~A()?
+
+Answer: Destructor
+
+9.
+int* p = new int;
+
+Where is memory allocated?
+
+Answer: Heap memory
+
+10.
+delete p;
+
+Why is delete used?
+
+Answer: To free dynamic memory
+
+BASIC CONCEPTUAL
+11.
+class Student
+{
+public:
+    string name;
+};
+
+What is name called?
+
+Answer: Data member / Attribute
+
+12.
+void display()
+{
+    cout << "Hi";
+}
+
+Inside class, what is this called?
+
+Answer: Member function
+
+13.
+Student s1;
+s1.name = "Ali";
+
+What operator is used to access member?
+
+Answer: Dot (.) operator
+
+14.
+Student* s = new Student;
+s->name = "Ali";
+
+Which operator is used?
+
+Answer: Arrow (->) operator
+
+15.
+A(const A& obj)
+{
+}
+
+Which constructor is this?
+
+Answer: Copy constructor
+
+16.
+
+What problem happens in shallow copy?
+
+Answer: Multiple objects share same memory
+
+17.
+
+What solves shallow copy issue?
+
+Answer: Deep copy
+
+18.
+
+Which keyword stores common data for all objects?
+
+Answer: static
+
+19.
+static int count;
+
+Is this shared by all objects?
+
+Answer: Yes
+
+20.
+
+What does OOP stand for?
+
+Answer: Object Oriented Programming
+
+INTERMEDIATE LEVEL
+21.
+
+Name the 4 pillars of OOP.
+
+Answer:
+
+Encapsulation
+Abstraction
+Inheritance
+Polymorphism
+22.
+class Animal
+{
+public:
+    void sound()
+    {
+        cout << "Animal Sound";
+    }
+};
+
+What is sound() here?
+
+Answer: Member function
+
+23.
+class Dog : public Animal
+{
+};
+
+What relationship is this?
+
+Answer: Inheritance
+
+24.
+
+Which class is parent class here?
+
+class Dog : public Animal
+
+Answer: Animal
+
+25.
+
+Which class is child class here?
+
+class Dog : public Animal
+
+Answer: Dog
+
+26.
+
+What is function overloading?
+
+Answer: Same function name with different parameters
+
+27.
+
+What is operator overloading?
+
+Answer: Giving special meaning to operators for objects
+
+28.
+Complex operator+(Complex c)
+
+Which operator is overloaded?
+
+Answer: +
+
+29.
+
+Which operator is overloaded for output?
+
+Answer: <<
+
+30.
+
+Which operator is overloaded for input?
+
+Answer: >>
+
+POINTERS & MEMORY
+31.
+int* ptr;
+
+What does ptr store?
+
+Answer: Address
+
+32.
+ptr = &x;
+
+What does & mean?
+
+Answer: Address of operator
+
+33.
+cout << *ptr;
+
+What does * do here?
+
+Answer: Dereference operator
+
+34.
+delete[] arr;
+
+Why [] is used?
+
+Answer: Array memory deletion
+
+35.
+
+What happens if dynamic memory is not deleted?
+
+Answer: Memory leak
+
+RELATIONSHIPS IN OOP
+36.
+
+A university has departments. Departments can exist separately.
+
+Which relationship?
+
+Answer: Aggregation
+
+37.
+
+A house has rooms. If house is destroyed, rooms are also destroyed.
+
+Which relationship?
+
+Answer: Composition
+
+38.
+
+Teacher teaches Student.
+
+Which relationship?
+
+Answer: Association
+
+39.
+
+Which relationship is strongest?
+
+Answer: Composition
+
+40.
+
+Which relationship is weakest?
+
+Answer: Association
+
+ADVANCED LEVEL
+41.
+virtual void display();
+
+What does virtual enable?
+
+Answer: Runtime polymorphism
+
+42.
+Animal* a = new Dog();
+
+What type of polymorphism is this?
+
+Answer: Runtime polymorphism
+
+43.
+
+Why do we use virtual functions?
+
+Answer: To achieve dynamic binding
+
+44.
+Directory* d = dynamic_cast<Directory*>(arr[i]);
+
+What does dynamic_cast do?
+
+Answer: Safely converts base pointer to derived pointer
+
+45.
+
+Which keyword prevents inheritance?
+
+Answer: final
+
+46.
+
+What is abstraction?
+
+Answer: Hiding implementation details
+
+47.
+
+What is encapsulation?
+
+Answer: Wrapping data and functions together
+
+48.
+
+Which function is automatically called when object goes out of scope?
+
+Answer: Destructor
+
+49.
+
+What is UML?
+
+Answer: Unified Modeling Language
+
+50.
+
+Which UML relationship uses diamond symbol?
+
+Answer:
+
+Aggregation → Empty diamond
+Composition → Filled diamond

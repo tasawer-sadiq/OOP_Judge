@@ -1,0 +1,26 @@
+# OOP-Online-Judge build/run commands (Windows PowerShell)
+
+# ----------------------
+# Option 1: Build with g++
+# ----------------------
+cd "d:\Semester2\OOP\OOP-LeetCode\OOP-Online-Judge"
+
+g++ -std=c++17 -Wall -Wextra -pedantic -Iinclude -o main.exe main.cpp \
+  src/CustomString.cpp src/User.cpp src/Session.cpp src/VerificationService.cpp src/UserManager.cpp \
+  src/TestCase.cpp src/Problem.cpp src/ProblemBank.cpp src/Submission.cpp src/Verdict.cpp \
+  src/OutputComparator.cpp src/EvaluationEngine.cpp src/ScoreCalculator.cpp src/ContestResult.cpp \
+  src/UIManager.cpp src/LoginScreen.cpp src/RegisterScreen.cpp src/DashboardScreen.cpp \
+  src/ProblemBrowserScreen.cpp src/ContestScreen.cpp src/ResultScreen.cpp
+
+.\main.exe
+
+# ----------------------
+# Option 2: Build with make (if make is installed)
+# ----------------------
+cd "d:\Semester2\OOP\OOP-LeetCode\OOP-Online-Judge"
+
+make
+.\main.exe
+
+# (Optional) clean exe files using Makefile
+# make clean
